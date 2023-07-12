@@ -201,16 +201,24 @@ function sayMyName() {
 //     console.log(wait)
 // }
 
-const numbers = [1,2,3,4,5,6,7,8,9]
+// const numbers = [1,2,3,4,5,6,7,8,9]
  
 // for (let i=0; i<numbers.length ; i++){
 //     console.log(numbers[i])
 // }
-let result = []
 
-for (const no of numbers){
-    // console.log(no*2)
-    result.push(no*2)
+
+// for (const no of numbers){
+//     // console.log(no*2)
+//     result.push(no*2)
    
+// }
+
+const double = (numbers) => {
+  let result = []
+ for (const num of numbers){
+  result.push(num ** 2)
+ }
+ return result
 }
-console.log(result)
+console.log(double([1,2,3,4,5,6,7,8,9,10]))
