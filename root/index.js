@@ -313,11 +313,33 @@ const wordFrequency = (phrase) =>{
 
 
 //higher order functions 
-//map
-//filter 
+//map - loops and returns an array
+//filter - loops and returns an array to matching conditions
 //reduce
 
 // [1,2,3,4,5].map(num => console.log(num * 5))
 
-let result = [1,2,3,4,5].map(number => number *4)
-console.log(result)
+// let result = [1,2,3,4,5].map(number => number *4)
+// console.log(result)
+
+//map
+const doubleMap = (numbers) => {
+  return numbers.map(numbers => numbers * 2)
+}
+// console.log(doubleMap([1,2,3]))
+
+//filters
+const filter = (numbers , greaterThan) =>{
+  let result = []
+
+  for(const number of numbers){
+    if(number >= greaterThan){
+      result.push(number);
+    }
+  }
+  return result
+}
+// console.log(filter([1,2,3,4,5,6,7,8,9], 4))
+
+const nums = [1,2,3,4,5,6,7,8]
+console.log(nums.filter(nums => nums > 6))
