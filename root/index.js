@@ -214,11 +214,110 @@ function sayMyName() {
    
 // }
 
-const double = (numbers) => {
-  let result = []
- for (const num of numbers){
-  result.push(num ** 2)
- }
- return result
+// const double = (numbers) => {
+//   let result = []
+//  for (const num of numbers){
+//   result.push(num ** 2)
+//  }
+//  return result
+// }
+// console.log(double([1,2,3,4,5,6,7,8,9,10]))
+
+// const HowmanyLetters = (phrase) => {
+  
+  
+  //for of
+
+  //counter
+//   let result = 0;
+
+//   for(const letter in phrase){
+//     console.log(Number(letter)+1)
+//     result = Number(letter)
+
+//   }
+//   return {result: phrase.length}
+
+// }
+
+// const phrase = 'Hey there I am wearing a purple tshirt'
+// const phrase = prompt('Write your phrase')
+
+// console.log(HowmanyLetters(phrase))
+
+
+// const sumArray = (number) => {
+//   let result = 0;
+//   // for loop
+//   for(const num of number){
+//     console.log(num)
+//     result= result + num;
+//   }
+//   return {result}
+// }
+// const nums = [1,2,3,4,5,6]
+// console.log(sumArray(nums))
+
+// max Number of the array 
+// const max = (numbers) => {
+//   let result = numbers[0];
+
+//   for(const num of numbers){
+//     if(num > result ){
+//       result = num
+//   }
+//   console.log(num)
+// }
+// return {result}
+// }
+// console.log(max([1,2,3,4,20,11,15,14,60]))
+
+const letterFrequency = (phrase) => {
+  console.log(phrase)
+  let frequency = {}
+   for(const letter of phrase){
+    // console.log(letter)
+
+    if(letter in frequency){
+      frequency[letter] ++
+      // incremental operators 
+      // ++ , -- , += , =-
+    }else{
+      frequency[letter]=1
+    }
+   }
+   return frequency
 }
-console.log(double([1,2,3,4,5,6,7,8,9,10]))
+// console.log(letterFrequency('hello!!! how are you'))
+
+//word frequency
+const wordFrequency = (phrase) =>{
+  console.log(phrase)
+  let frequency = {}
+  words = phrase.split(' ')
+  // console.log(words)
+  // return letterFrequency(words)
+//   for (const word of words){
+//     console.log(word)
+//     if(word in frequency){
+//       frequency[word]+=1;
+//     }
+//     else{
+//       frequency[word]= 1 ;
+//     }
+//   }
+//   return frequency
+}
+
+// console.log(wordFrequency('lol whatttt how you lol how??'))
+
+
+//higher order functions 
+//map
+//filter 
+//reduce
+
+// [1,2,3,4,5].map(num => console.log(num * 5))
+
+let result = [1,2,3,4,5].map(number => number *4)
+console.log(result)
