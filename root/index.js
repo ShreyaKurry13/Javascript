@@ -341,5 +341,15 @@ const filter = (numbers , greaterThan) =>{
 }
 // console.log(filter([1,2,3,4,5,6,7,8,9], 4))
 
-const nums = [1,2,3,4,5,6,7,8]
-console.log(nums.filter(nums => nums > 6))
+// const nums = [1,2,3,4,5,6,7,8]
+// console.log(nums.filter(num => num > 6 || num < 2))
+
+const actors = [
+  {"name": "John", "age" : 30},
+  {"name":"Mary","age":25},
+  {"name":"Tom","age":35}
+]
+let result = actors.filter(act => act.age >= 30 )
+console.log(result)
+
+// playGround.innerHTML = '<h1>${result[0].name}</h1>' 
